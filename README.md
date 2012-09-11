@@ -27,7 +27,7 @@ For barebones implementation, you only need to add the require CSS and JS to you
 Then, in simple form, use `:as => :datetimepicker`
 
 ```erb
-<%= simple_form_for @record do |f| >
+<%= simple_form_for @record do |f| %>
   <% f.input :created_at :as => :datetimepicker %>
 <% end %>
 ```
