@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["danott@marshill.com"]
   gem.description   = %q{Custom field for individual setting of date and time for Rails :datetime attributes.}
   gem.summary       = %q{Custom field for individual setting of date and time for Rails :datetime attributes.}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/marshill/datetimepicker"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

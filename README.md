@@ -1,29 +1,34 @@
 # Datetimepicker
 
-TODO: Write a gem description
-
 ## Installation
 
-Add this line to your application's Gemfile:
+Add to your application's Gemfile:
 
-    gem 'datetimepicker'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install datetimepicker
+```
+gem 'datetimepicker'
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+For barebones implementation, you only need to add the require CSS and JS to your application.
 
-## Contributing
+```coffeescript
+# application.js.coffee
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+#= require datetimepicker
+```
+
+```sass
+// application.css.scss
+
+@import "datetimepicker"
+```
+
+Then, in simple form, use `:as => :datetimepicker`
+
+```erb
+<%= simple_form_for @record do |f| >
+  <% f.input :created_at :as => :datetimepicker %>
+<% end %>
+```
+
