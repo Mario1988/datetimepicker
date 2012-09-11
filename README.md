@@ -28,7 +28,7 @@ Then, in simple form, use `:as => :datetimepicker`
 
 ```erb
 <%= simple_form_for @record do |f| %>
-  <% f.input :created_at :as => :datetimepicker %>
+  <% f.input :created_at, :as => :datetimepicker %>
 <% end %>
 ```
 
